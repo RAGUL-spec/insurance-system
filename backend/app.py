@@ -190,6 +190,8 @@ def health_check():
     return jsonify({"status": "healthy"}), 200
 
 if __name__ == "__main__":
-    print("Starting Flask server on http://localhost:5000")
-    print(f"API Key present: {anthropic_key is not None}")
-    app.run(debug=True, port=5000)
+    app.run(
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 5000))
+    )
+
