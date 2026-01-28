@@ -36,7 +36,7 @@ function FileUpload() {
     });
 
     try {
-      const response = await axios.post('http://insurance-system-u94.onrender.com/api/upload', formData, {
+      const response = await axios.post('http://insurance-system-65j.onrender.com/api/upload', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
