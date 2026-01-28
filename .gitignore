@@ -1,0 +1,12 @@
+# Python virtual environment
+backend/venv
+
+# Environment variables (secrets)
+backend/.env
+
+# Node dependencies
+node_modules
+
+# Build output
+frontend/build
+backend/uploads
